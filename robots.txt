@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /data/
+Disallow: /*.sqlite$
+
+Sitemap: https://nenastudio.nl/sitemap.xml
