@@ -1,22 +1,22 @@
 /* Nena Studio — Glassmorphic Bridal Atelier — style.css | cPanel-ready, no build step */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Manrope:wght@300;400;500&family=Quicksand:wght@300;400;500&family=Great+Vibes&display=swap');
 :root{
   --teal-dark:#006D77; --teal-classic:#008080; --turq-soft:#2A9D8F; --teal-light:#4DB6AC; --turq-vivid:#00A6A6; --aqua-light:#A8DADC;
-  --bg-ivory:#FAF8F5; --bg-cream:#FFFDF9; --bg-blush:#F4ECE6; --ink:#1a2a2e; --muted:#5a6d71;
+  --bg-ivory:#FFFBF7; --bg-cream:#FFFEFD; --bg-blush:#FFF0F3; --bg-blush-deep:#FFE4E8; --blush-ink:#c48a98; --ink:#2b2f31; --muted:#7a8a8e;
   --glass: rgba(255,255,255,0.66); --glass-strong: rgba(255,255,255,0.82);
-  --glass-border: 1px solid rgba(255,255,255,0.85); --stitch: 1.5px dashed rgba(42,157,143,0.34);
+  --glass-border: 1px solid rgba(255,255,255,0.85); --stitch: 1.4px dashed rgba(196,138,152,0.24); --stitch-strong: 1.4px dashed rgba(42,157,143,0.26);
   --radius-xl:26px; --radius-lg:20px; --radius-md:14px; --radius-pill:999px;
-  --shadow-soft: 0 8px 32px rgba(0,109,119,0.08), 0 2px 12px rgba(0,109,119,0.06);
-  --shadow-lift: 0 16px 48px rgba(0,109,119,0.13), 0 6px 20px rgba(0,109,119,0.08);
+  --shadow-soft: 0 10px 36px rgba(0,109,119,0.07), 0 2px 14px rgba(196,138,152,0.05);
+  --shadow-lift: 0 18px 52px rgba(0,109,119,0.10), 0 6px 22px rgba(196,138,152,0.07);
   --focus: 0 0 0 3px rgba(0,166,166,0.28);
   --max: 1180px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth; scroll-padding-top:84px}
 body{
-  margin:0; font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  margin:0; font-family:'Manrope','Quicksand',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
   color:var(--ink); background: var(--bg-ivory);
-  line-height:1.65; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  line-height:1.82; -webkit-font-smoothing:antialiased; font-weight:300; text-rendering:optimizeLegibility;
 }
 img,video{max-width:100%; display:block}
 a{color:var(--teal-dark); text-decoration:none}
@@ -234,6 +234,17 @@ h3{font-size: clamp(20px, 2.6vw, 26px)}
 .footer ul{list-style:none; padding:0; margin:0}
 .footer-bottom{margin-top:18px; padding-top:14px; border-top:1px solid rgba(255,255,255,0.14); display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; font-size:12.5px; color: rgba(234,246,244,0.78)}
 @media (max-width:900px){ .footer-grid{grid-template-columns:1fr} }
+
+/* ── Girly v2 ♡ — blush, thin, delicate ── */
+.aura--blush{width:520px; height:520px; background: radial-gradient(circle at 50% 50%, #FFF0F3 0%, #FFE4E8 46%, transparent 70%); right:-70px; top:36%; opacity:0.52; filter: blur(44px)}
+.girly-logo{height:30px; width:auto; display:block}
+.girly-logo--footer{height:28px; width:auto; display:block}
+.brand{gap:12px}
+.bow{font-family:'Great Vibes',cursive; font-weight:400; color: var(--blush-ink); font-size:20px}
+.btn{font-weight:400 !important; letter-spacing:0.01em}
+.eyebrow{font-weight:400; background: rgba(255,228,232,0.72); border-color: rgba(196,138,152,0.14); color: var(--blush-ink)}
+.glass{border-radius: 26px}
+.service-card, .p-card, .step{border-radius: 24px}
 
 /* Animations */
 @keyframes floatY { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }

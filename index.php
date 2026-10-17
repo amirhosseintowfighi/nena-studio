@@ -93,6 +93,7 @@ $schemaFAQ = [
 <meta name="twitter:image" content="<?= htmlspecialchars($ogImage) ?>">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500&family=Quicksand:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://images.unsplash.com">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='15' fill='%23006D77'/><path d='M10 22 L22 10 M9 10 Q16 8 23 10' stroke='white' stroke-width='1.6' fill='none' stroke-linecap='round'/><circle cx='22' cy='10' r='1.4' fill='white'/></svg>">
@@ -103,16 +104,17 @@ $schemaFAQ = [
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="bg-auras" aria-hidden="true"><div class="aura aura--1"></div><div class="aura aura--2"></div><div class="aura aura--3"></div><div class="aura aura--4"></div></div>
+<div class="bg-auras" aria-hidden="true"><div class="aura aura--1"></div><div class="aura aura--2"></div><div class="aura aura--3"></div><div class="aura aura--4"></div><div class="aura aura--blush" aria-hidden="true"></div></div>
 
 <!-- NAV -->
 <nav class="nav" aria-label="Primary">
   <div class="nav-inner">
     <a class="brand" href="#" aria-label="Nena Studio — home">
-      <span class="brand-mark" aria-hidden="true">
+      <img src="assets/img/NENA MAIN.svg" alt="Nena Studio" width="100" height="30" class="girly-logo" loading="eager" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+      <span class="brand-mark" aria-hidden="true" style="display:none">
         <svg viewBox="0 0 24 24" fill="none" stroke="#006D77" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 20 L18 8"/><path d="M7 8 Q12 6 17 8"/><circle cx="18" cy="7.2" r="1.2" fill="#2A9D8F" stroke="none"/><path d="M4.5 9.5 Q6 7 8.2 9 Q6 11 4.5 9.5Z" fill="none"/><path d="M9 9 Q11.2 6.8 13.6 9 Q11.2 11.2 9 9Z" fill="none"/></svg>
       </span>
-      Nena Studio
+      <span class="sr-only">Nena Studio</span>
     </a>
     <button class="hamburger" id="hamb" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu"><span></span><span></span><span></span></button>
     <div class="nav-links" id="navLinks">
@@ -413,16 +415,14 @@ $schemaFAQ = [
     <div class="footer-grid">
       <div>
         <div style="display:flex; gap:10px; align-items:center; margin-bottom:8px">
-          <span style="width:36px; height:36px; border-radius:50%; display:grid; place-items:center; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.18)">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6"><path d="M6 20 L18 8"/><path d="M7 8 Q12 6 17 8"/><circle cx="18" cy="7.2" r="1.2" fill="white" stroke="none"/></svg>
-          </span>
+          <img src="assets/img/NENA WHITE.svg" alt="Nena Studio" width="100" height="28" class="girly-logo--footer" loading="lazy" decoding="async" onerror="this.style.display='none'">
           <strong style="font-family:'Cormorant Garamond',serif; font-size:20px; color:#fff">Nena Studio</strong>
         </div>
         <p>Creative textile studio in the Netherlands — personalised wedding &amp; event accessories, embroidery and garment alterations. Every creation begins with your story.</p>
         <p style="margin-top:8px"><a href="<?= htmlspecialchars($instaUrl) ?>" target="_blank" rel="noopener">Instagram</a> · <a href="mailto:<?= htmlspecialchars($contactEmail) ?>"><?= htmlspecialchars($contactEmail) ?></a></p>
       </div>
       <div><h4>Explore</h4><ul><li><a href="#our-story">Our Story</a></li><li><a href="#what-we-create">What We Create</a></li><li><a href="#behind-the-stitches">Behind the Stitches</a></li><li><a href="#lets-create-together">Let's Create Together</a></li></ul></div>
-      <div><h4>Atelier</h4><p>Netherlands · By appointment<br>Slow-crafted · Story-led<br>Commissions &amp; alterations welcome</p><p style="margin-top:8px"><a href="admin/login.php" rel="nofollow">Admin</a> · <a href="sitemap.xml">Sitemap</a></p></div>
+      <div><h4>Atelier</h4><p>Netherlands · By appointment<br>Slow-crafted · Story-led<br>Commissions &amp; alterations welcome</p><p style="margin-top:8px"><a href="sitemap.xml">Sitemap</a></p></div>
     </div>
     <div class="footer-bottom"><span>© <?= date('Y') ?> Nena Studio · All stories stitched with care.</span><span>Made with ✦ in the Netherlands · <span style="opacity:0.9">Your Story, One Stitch at a Time.</span></span></div>
   </div>
